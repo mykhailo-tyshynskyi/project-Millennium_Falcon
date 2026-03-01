@@ -72,7 +72,14 @@ padding: 10px 125px;
 color: #0d0b0a;
 background-color:  rgba(13, 11, 10, 0.05);
 margin-bottom: 12px;
+transition: background 250ms;
 }
+
+.footer-button:hover,
+.footer-button:focus{
+background-color: #c2d9fc;
+}
+
 
 .footer-privacy{
 font-weight: 400;
@@ -155,6 +162,7 @@ left: 0;
 }
 
 .footer-form{
+  width: 546px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,8 +174,6 @@ left: 0;
 }
 
 .footer-input-line{
-width: 546px;
-border-radius: 12px;
 margin-right: 16px;
 padding: 8px 12px;
 }
@@ -237,7 +243,7 @@ margin-bottom: 40px;
 
 .footer-main{
   display: flex;
-  margin: 0 auto;
+ justify-content: space-between;
 }
 
 .footer-input{
@@ -269,15 +275,14 @@ margin-bottom: 40px;
 
 .footer-link{
   max-width: 371px;
-  margin-left: 250px;
+  
 }
 
-.yoga-studio{
-  margin: 0;
-}
+
 
 .footer-social-list{
-margin-bottom: 24px;
+
+
 }
 
 
