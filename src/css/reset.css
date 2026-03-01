@@ -14,10 +14,6 @@ p {
   margin: 0;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
 ul {
   list-style-type: none;
   margin: 0;
