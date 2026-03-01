@@ -1,0 +1,90 @@
+.pricing-container{
+    text-align: center;
+    padding: 64px 16px;
+}
+
+.upper-text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.pricing-section-header{
+    font-family: 'Cabin';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+}
+
+.after-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 48px;
+}
+
+.plans-list{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.plan-box{
+    border: 0px solid rgba(13, 11, 10, 0.15);
+    border-radius: 16px;
+    padding: 32px 24px;
+    background: #DFEBEB;
+}
+
+.price-box{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.plan-name{
+    font-family: 'Cabin';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.plan-price{
+    font-family: 'Cabin';
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+}
+
+.plan-features{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0px;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.plan-features-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.plan-button{
+    border: 1px solid #C2D9FC;
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 295px;
+    background: #C2D9FC;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
