@@ -1,23 +1,31 @@
 .footer {
+  background-color: #dfebeb;
   padding: 48px 16px;
- background: var(--color-scheme-1-background);
-  
+ 
 }
 
+
 .footer-container{
- background: var(--color-scheme-1-foreground);
+ background-color: #f8fbfe;
  padding: 32px;
+ position: relative;
+ 
 }
 
 .footer-input{
     margin-bottom: 40px;
     max-width: 279px;
+    
 }
 
-
+.footer-logo{
+ position: absolute;
+ top: 0;
+ left: 0;
+ 
+}
 
 .footer-input-text{
-font-family: var(--font-family);
 font-weight: 400;
 font-size: 16px;
 line-height: 1.6;
