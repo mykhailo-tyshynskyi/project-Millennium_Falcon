@@ -1,0 +1,52 @@
+
+.team .team-members {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.team .container {
+    font-family: inherit;
+}
+
+.team .team-members li img {
+    border-radius: 16px;
+    display: block;
+    max-width: 100%
+}
+
+.team p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.team .member-name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.team .about-member {
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.team .team-content {
+    margin-top: 20px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+}
