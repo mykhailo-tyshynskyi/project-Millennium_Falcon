@@ -1,29 +1,37 @@
 <footer class="footer">
     
      <div class="container footer-container">
+   <div class="footer-main">
         <div class="footer-input">
             <svg class="footer-logo" width="84" height="36" >
-        <use  href="/sprite.svg#icon-company-logo"></use>
+        <use  href="/img/sprite.svg#icon-company-logo"></use>
      </svg> 
-                <form >
-                <input class="footer-input-line" 
+     <p class="footer-input-text">
+        Subscribe to our newsletter for the latest updates on our yoga courses and events.
+     </p>
+     <div class="footer-subscribe">
+                <form class="footer-form">
+                <input class="footer-input-line error-input" 
                  type="email"
-                name="subscribe-email"
-                id="subscribe-email"
-                placeholder="Placeholder"
-                autofocus >
-                </form>
+                 name="email-order"
+                required
+                pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                placeholder="E-mail"
+                
+                 >
                 <button class="footer-button" type="submit">Join
                 </button>
+                </form>
+                
                 <p class="footer-privacy">
                     By subscribing, you consent to our Privacy Policy and agree to receive updates.
-                </p>
-           
-
+                </p>               
+</div>
+  
         </div>
 
         <div class="footer-link">
-            <div class="footer-nav">
+            <nav class="footer-nav">
                 <h3 class="footer-link-title">Quick Links</h3>
                 <ul class="footer-nav-list">
                     <li class="footer-nav-link">
@@ -39,7 +47,7 @@
                         <a href="#">Contacts</a>
                     </li>
                 </ul>
-            </div>
+            </nav>
 
 
             <div class="footer-social">
@@ -47,8 +55,8 @@
                 <ul class="footer-social-list">
                     <li class="footer-social-item">
                         <a href="https://www.facebook.com/ " class="footer-social-link">
-                            <svg width="24" height="24"  style="fill: black;">
-                                <use href="/public/sprite.svg#icon-facebook">
+                            <svg width="24" height="24" >
+                                <use href="/img/sprite.svg#icon-facebook">
                                 </use>
                             </svg>
                             Facebook
@@ -57,7 +65,7 @@
                     <li class="footer-social-item">
                         <a href="https://www.instagram.com/" class="footer-social-link">
                             <svg width="24" height="24" >
-                               <use href="/src/img/sprite.svg#icon-instagram">
+                               <use href="/img/sprite.svg#icon-instagram">
 
                                </use>
                             </svg>
@@ -66,22 +74,16 @@
                     </li>
                     <li class="footer-social-item">
                         <a href="https://www.linkedin.com/ " class="footer-social-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M19.3125 3H4.6875C3.75938 3 3 3.75938 3 4.6875V19.3125C3 20.2406 3.75938 21 4.6875 21H19.3125C20.2406 21 21 20.2406 21 19.3125V4.6875C21 3.75938 20.2406 3 19.3125 3ZM9.75 17.625H7.5V9.75H9.75V17.625ZM8.625 8.625C8.00287 8.625 7.5 8.12213 7.5 7.5C7.5 6.87788 8.00287 6.375 8.625 6.375C9.24713 6.375 9.75 6.87788 9.75 7.5C9.75 8.12213 9.24713 8.625 8.625 8.625ZM17.625 17.625H15.375V13.125C15.375 12.5029 14.8721 12 14.25 12C13.6279 12 13.125 12.5029 13.125 13.125V17.625H10.875V9.75H13.125V11.1456C13.5891 10.5094 14.2989 9.75 15.0938 9.75C16.4932 9.75 17.625 11.0089 17.625 12.5625V17.625Z"
-                                    fill="#0D0B0A" />
+                            <svg width="24" height="24" >
+                                <use href="/img/sprite.svg#icon-linkedin"></use>
                             </svg>
                             LinkedIn
                         </a>
                     </li>
                     <li class="footer-social-item">
                         <a href="https://www.youtube.com/ " class="footer-social-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M21.5928 7.20301C21.4789 6.78041 21.2563 6.39501 20.9472 6.08518C20.6381 5.77534 20.2532 5.55187 19.8308 5.43701C18.2648 5.00701 11.9998 5.00001 11.9998 5.00001C11.9998 5.00001 5.73584 4.99301 4.16884 5.40401C3.74677 5.52415 3.36266 5.75078 3.05341 6.06214C2.74415 6.3735 2.52013 6.75913 2.40284 7.18201C1.98984 8.74801 1.98584 11.996 1.98584 11.996C1.98584 11.996 1.98184 15.26 2.39184 16.81C2.62184 17.667 3.29684 18.344 4.15484 18.575C5.73684 19.005 11.9848 19.012 11.9848 19.012C11.9848 19.012 18.2498 19.019 19.8158 18.609C20.2383 18.4943 20.6236 18.2714 20.9335 17.9622C21.2434 17.653 21.4672 17.2682 21.5828 16.846C21.9968 15.281 21.9998 12.034 21.9998 12.034C21.9998 12.034 22.0198 8.76901 21.5928 7.20301ZM9.99584 15.005L10.0008 9.00501L15.2078 12.01L9.99584 15.005Z"
-                                    fill="#0D0B0A" />
+                            <svg width="24" height="24" >
+                                <use href="/img/sprite.svg#icon-youtube"></use>
                             </svg>
                             YouTube
                         </a>
@@ -89,9 +91,9 @@
                 </ul>
             </div>
         </div>
-        <p class="yoga-studio">
-            &copy; 2025 Yoga Studio. All rights reserved.
+        </div>
+         <p class="yoga-studio">
+            © 2025 Yoga Studio. All rights reserved.
         </p>
-
     </div>
 </footer>
