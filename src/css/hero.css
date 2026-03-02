@@ -118,9 +118,7 @@
       background-image: url(/img/hero/hero-t@2x.webp);
     }
   }
-  .container {
-    padding: 0 32px;
-  }
+
   .hero-content-box {
     row-gap: 8px;
     padding: 24px 95px 24px 0;
@@ -162,9 +160,7 @@
       background-image: url(/img/hero/hero@2x.webp);
     }
   }
-  .container {
-    padding: 0 12px;
-  }
+
   .hero-content-box {
     flex-direction: row;
     column-gap: 24px;
