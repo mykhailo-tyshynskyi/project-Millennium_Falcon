@@ -1,3 +1,55 @@
-.text-descr {
-  background-color: blue;
+.breathe {
+  background-color: #f2fafa;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.breathe-title {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+  margin-bottom: 20px;
+}
+.breathe-text {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  color: #0d0b0a;
+  margin-bottom: 48px;
+}
+.breathe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.breathe-item {
+  width: calc((100% - 24px) / 2);
+}
+
+.breathe-img {
+  border-radius: 16px;
+}
+@media screen and (min-width: 768px) {
+  .breathe-title {
+    margin-bottom: 24px;
+  }
+  .breathe-text {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .breathe-title {
+    font-size: 52px;
+  }
+
+  .breathe-item {
+    width: calc((100% - 48px) / 3);
+  }
 }
