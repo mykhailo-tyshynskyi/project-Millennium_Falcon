@@ -1,6 +1,7 @@
 .pricing-container{
     text-align: center;
-    padding: 64px 16px;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 .upper-text{
@@ -32,11 +33,17 @@
     gap: 32px;
 }
 
+.plans-list-item{
+    width: 100%;
+}
+
 .plan-box{
     border: 0px solid rgba(13, 11, 10, 0.15);
     border-radius: 16px;
     padding: 32px 24px;
+    padding-bottom: 110px;
     background: #DFEBEB;
+    position: relative;
 }
 
 .price-box{
@@ -68,7 +75,7 @@
     flex-direction: column;
     padding: 8px 0px;
     gap: 16px;
-    margin-bottom: 32px;
+    /*margin-bottom: 32px;*/
 }
 
 .plan-features-text{
@@ -87,4 +94,90 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+
+    position: absolute;
+    right: 24px;
+    bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+    .pricing-container{
+        /*padding-top: 40px;
+        padding-bottom: 40px;*/
+        padding: 40px 32px;
+    }
+    
+    .upper-text{
+        margin-bottom: 16px;
+    }
+
+    .pricing-section-header{
+        margin-bottom: 24px;
+    }
+
+    .after-text{
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .plans-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .plans-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .plan-box{
+        padding: 16px;
+        padding-bottom: 84px;
+    }
+
+    .price-box{
+        margin-bottom: 32px;
+    }
+
+    .plan-name {
+        font-size: 22px;
+    }
+
+    .plan-price{
+        font-size: 72px;
+    }
+
+    .plan-features{
+        margin-bottom: 22px;
+    }
+
+    .plan-button{
+        width: 308px;
+        right: 16px;
+        bottom: 16px;
+    }
+
+    .plans-list-item:nth-last-of-type(1) .plan-box{
+        padding: 86px 16px;
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .plans-list-item:nth-last-of-type(1) .price-box,
+    .plans-list-item:nth-last-of-type(1) .plan-features{
+        margin: 0;
+        width: calc((100% - 32px) / 2);
+    }
+
+    .plans-list-item:nth-last-of-type(1) {
+        width: 100%;
+    }
+
+    .plans-list-item:nth-last-of-type(1) .plan-button {
+        left: 16px;
+        bottom: 86px;
+        right: auto;
+    }
+    
 }
