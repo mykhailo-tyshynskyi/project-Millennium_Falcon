@@ -285,7 +285,6 @@ margin-bottom: 16px;
 
 .footer-main{
   display: flex;
-  align-items: center;
  justify-content: space-between;
  margin-bottom: 24px;
 }
