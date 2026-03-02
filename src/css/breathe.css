@@ -14,8 +14,6 @@
   margin-bottom: 20px;
 }
 .breathe-text {
-  font-family: 'Sarabun', sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
   text-align: center;
@@ -28,27 +26,38 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
+  padding: 0 4px;
 }
 .breathe-item {
   width: calc((100% - 24px) / 2);
 }
 
-.breathe-img {
-  border-radius: 16px;
-}
 @media screen and (min-width: 768px) {
+  .breathe {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .breathe-title {
     margin-bottom: 24px;
   }
   .breathe-text {
     margin-bottom: 80px;
   }
+  .breathe-list {
+    padding: 0;
+  }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1336px) {
+  .breathe {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
   .breathe-title {
     font-size: 52px;
   }
-
+  .breathe-list {
+    padding: 0;
+  }
   .breathe-item {
     width: calc((100% - 48px) / 3);
   }
