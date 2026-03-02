@@ -11,6 +11,10 @@
 border-radius: 16px;
 }
 
+.footer-main{
+  margin-bottom: 48px;
+}
+
 .footer-input{
   position: relative;
     margin-bottom: 40px;
@@ -18,7 +22,7 @@ border-radius: 16px;
     
 }
 
-.footer-logo{
+.footer-logo-link{
  position: absolute;
  top: 0;
  left: 0;
@@ -30,8 +34,8 @@ font-weight: 400;
 font-size: 16px;
 line-height: 1.6;
 color: #0d0b0a;
-padding-top: 56px;
 margin-bottom: 20px;
+padding-top: 56px;
 }
 
 .footer-subscribe{
@@ -72,7 +76,7 @@ padding: 10px 125px;
 color: #0d0b0a;
 background-color:  rgba(13, 11, 10, 0.05);
 margin-bottom: 12px;
-transition: background 250ms;
+transition: background-color 250ms ease, border-color 250ms ease;
 }
 
 .footer-button:hover,
@@ -107,9 +111,17 @@ margin-bottom: 12px;
 }
 
 .footer-nav-link{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.6;
+color: #0d0b0a;
 padding: 8px 0px;
 }
 
+.footer-nav-link:hover,
+.footer-nav-link:focus{
+  color: #c2d9fc;
+}
 
 
 .footer-social-title{
@@ -120,15 +132,41 @@ color: #0d0b0a;
 margin-bottom: 12px;
 }
 
+
 .footer-social-list{
-margin-bottom: 48px;
+
 }
 
 .footer-social-link{
   display: flex;
   gap: 12px;
   padding: 8px 0px;
+  transition: color 250ms ease;
 }
+
+.footer-social-link:hover,
+.footer-social-link:focus{
+color: #c2d9fc;
+}
+
+.footer-social-item{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.6;
+color: #0d0b0a;
+}
+
+.footer-social-item svg{
+  transition: fill 250ms ease;
+}
+
+.footer-social-item:hover,
+.footer-social-item:focus > svg{
+  fill: #c2d9fc;
+}
+
+
+
 .yoga-studio{
 font-weight: 400;
 font-size: 14px;
@@ -148,6 +186,14 @@ color: #0d0b0a;
     max-width: 768px;
   }
 
+  .footer {
+  background-color: #dfebeb;
+  padding: 40px 32px;
+}
+
+.footer-main{
+  margin-bottom: 40px;
+}
 .footer-input{
   max-width: 640px;
 }
@@ -181,7 +227,6 @@ padding: 8px 12px;
 .footer-button{
 padding: 10px 24px;
 max-width: 78px;
-height: 46px;
 }
 
 .footer-link{
@@ -206,9 +251,6 @@ width: 300px;
 margin-bottom: 16px;
 }
 
-.footer-social-list{
-margin-bottom: 40px;
-}
 
 }
 
@@ -233,25 +275,24 @@ margin-bottom: 40px;
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1336px) {
   .container {
-    max-width: 1312px;
-    
+    max-width: 1200px;
   }
 
-  .footer-container{
-    padding: 48px;
-  }
+ .footer {
+  background-color: #dfebeb;
+  padding: 60px;
+}
 
 .footer-main{
   display: flex;
+  align-items: center;
  justify-content: space-between;
+ margin-bottom: 24px;
 }
 
 .footer-input{
   max-width: 595px;
-}
-
-.footer-logo{
-
+  margin: 0;
 }
 
 .footer-input-text{
@@ -261,13 +302,7 @@ margin-bottom: 40px;
   width: 100%;
 }
 
-.footer-input-line{
 
-}
-
-.footer-button{
-
-}
 
 .footer-privacy{
 
@@ -277,16 +312,6 @@ margin-bottom: 40px;
   max-width: 371px;
   
 }
-
-
-
-.footer-social-list{
-
-
-}
-
-
-
 
 
 }
