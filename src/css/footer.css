@@ -19,7 +19,6 @@ border-radius: 16px;
   position: relative;
     margin-bottom: 40px;
     max-width: 279px;
-    
 }
 
 .footer-logo-link{
@@ -56,7 +55,6 @@ border-color: transparent;
 input:focus:invalid {
     outline: none;
     border-color: #ff0303;
-
 }
 
 
@@ -76,7 +74,7 @@ padding: 10px 125px;
 color: #0d0b0a;
 background-color:  rgba(13, 11, 10, 0.05);
 margin-bottom: 12px;
-transition: background-color 250ms ease, border-color 250ms ease;
+transition: background-color 250ms ease;
 }
 
 .footer-button:hover,
@@ -133,9 +131,6 @@ margin-bottom: 12px;
 }
 
 
-.footer-social-list{
-
-}
 
 .footer-social-link{
   display: flex;
@@ -275,7 +270,7 @@ margin-bottom: 16px;
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1336px) {
   .container {
-    max-width: 1200px;
+    max-width: 1336px;
   }
 
  .footer {
@@ -294,22 +289,14 @@ margin-bottom: 16px;
   margin: 0;
 }
 
-.footer-input-text{
-}
 
 .footer-subscribe{
   width: 100%;
 }
 
 
-
-.footer-privacy{
-
-}
-
 .footer-link{
   max-width: 371px;
-  
 }
 
 

@@ -1,0 +1,49 @@
+<div class="modal-overlay" data-modal-80>
+  <div class="modal">
+    <button class="modal-close-btn" type="button" data-modal-close-80>
+      <svg width="32" height="32" class="modal-close-svg">
+        <use href="/img/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal-price">
+      <h2 class="modal-price-title">Join Now!</h2>
+      <p class="modal-price-text">12 Sessions Package</p>
+      <p class="modal-price-dollar">$80</p>
+    </div>
+    <div class="modal-user-info">
+      <form action="" class="modal-form">
+        <label class="modal-label"
+          >Your Name
+          <input
+            class="modal-input"
+            type="text"
+            name="user-name"
+            placeholder="Name"
+          />
+        </label>
+        <label class="modal-label"
+          >Email
+          <input
+            class="modal-input"
+            type="email"
+            name="user-email"
+            placeholder="E-mail"
+          />
+        </label>
+        <label class="modal-label"
+          >Phone number
+          <input
+            class="modal-input"
+            pattern="[+]{1}[0-9]{11,14}" 
+            title="Введіть номер телефону у форматі +38 (0XX) XXX-XX-XX"
+            type="tel"
+            name="user-phone"
+            placeholder="Phone"
+            required
+          />
+        </label>
+        <button class="modal-button" type="submit">Go to checkout</button>
+      </form>
+    </div>
+  </div>
+</div>

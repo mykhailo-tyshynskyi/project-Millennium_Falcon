@@ -1,0 +1,210 @@
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.247);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal {
+    min-width: 320px;
+    max-width: 375px;
+    position: relative;
+    background-color: #dfebeb;
+    padding: 64px 16px 112px 16px;
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    transition: background-color 250ms ease;
+}
+
+.modal-close-svg {
+    fill: #0d0b0a;
+    transition: fill 250ms ease;
+}
+
+/* .modal-close-btn:hover,
+.modal-close-btn:focus {
+  
+}
+
+.modal-close-btn:hover .modal-close-svg,
+.modal-close-btn:focus .modal-close-svg {
+  
+} */
+
+
+.modal-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.modal-price-title {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+    margin-bottom: 32px;
+}
+
+.modal-price-text {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+    margin-bottom: 8px;
+}
+
+.modal-price-dollar {
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #0d0b0a;
+}
+
+
+
+
+.modal-label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+
+}
+
+.modal-input {
+    width: 100%;
+    height: 42px;
+    padding: 8px 12px;
+    background-color: rgba(13, 11, 10, 0.05);
+    border-radius: 12px;
+    border-color: transparent;
+}
+
+.modal-button {
+    width: 100%;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #0d0b0a;
+    border: 1px solid #c2d9fc;
+    border-radius: 100px;
+    background-color: #c2d9fc;
+    transition: background-color 250ms ease;
+}
+
+/* .modal-button:hover,
+.modal-button:focus{
+
+} */
+
+
+@media only screen and (min-width: 768px) {
+    .modal {
+        max-width: 704px;
+        padding: 64px 92px;
+    }
+
+    .modal-price-title {
+        font-size: 52px;
+        margin-bottom: 24px;
+    }
+
+    .modal-price-text {
+        font-size: 22px;
+    }
+
+    .modal-price-dollar {
+        font-size: 36px;
+        line-height: 1.4;
+    }
+
+    .modal-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+
+    }
+
+    .modal-label:first-child {
+        flex-basis: 100%;
+    }
+
+    .modal-label:nth-child(2),
+    .modal-label:nth-child(3) {
+        flex-basis: calc(50% - 12px);
+    }
+
+    .modal-button {
+        width: 155px;
+    }
+
+
+
+}
+
+
+
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1336px) {
+    .modal {
+        max-width: 764px;
+        padding: 64px;
+    }
+
+    .modal-price {
+        margin-bottom: 24px;
+    }
+
+    .modal-price-title {
+        font-size: 52px;
+        margin-bottom: 24px;
+    }
+
+    .modal-price-text {
+        font-size: 22px;
+    }
+
+    .modal-price-dollar {
+        font-size: 36px;
+        line-height: 1.4;
+    }
+
+}
