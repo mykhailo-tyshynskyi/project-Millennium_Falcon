@@ -1,0 +1,160 @@
+/* ==================== MOBILE MENU ====================== */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu.is-open {
+    transform: translateY(0);
+}
+
+
+.mobile-menu-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 64px;
+    padding: 8px 16px;
+}
+
+.mobile-menu-top .nav-pricing {
+    width: 105px;
+}
+
+
+.menu-close-wrapper {
+    width: 138px;
+    height: 48px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.mobile-menu-close {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.mobile-menu-close svg {
+    width: 24px;
+    height: 24px;
+}
+
+.mobile-menu-top .nav-join {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* ==================== LOVER PART MENU ====================== */
+.mobile-menu-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    padding: 16px 16px 160px 16px;
+    height: 748px;
+    overflow-y: auto;
+}
+
+.mobile-menu-nav {
+    margin-bottom: auto;
+    width: 100%;
+}
+
+.mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.mobile-menu-link {
+    display: flex;
+    align-items: center;
+    padding-block: 12px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #111111;
+}
+
+
+.nav-pricing-mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-hawkes-blue);
+    border: 1px solid var(--color-hawkes-blue);
+    border-radius: 100px;
+    width: 100%;
+    height: 46px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Style Tableta */
+@media screen and (min-width: 768px) {
+
+    .mobile-menu-top {
+        padding: 0 32px;
+        justify-content: space-between;
+    }
+
+    .menu-close-wrapper,
+    .mobile-menu-top .nav-join {
+        width: auto;
+        flex: none;
+    }
+
+    .mobile-menu-top .nav-pricing {
+        width: 105px;
+        height: 42px;
+    }
+
+    .nav-logo {
+        flex-shrink: 0;
+    }
+
+    .mobile-menu-wrapper {
+        padding: 16px 32px 160px 32px;
+
+        flex-grow: 0;
+
+        height: 748px;
+        overflow-y: auto;
+    }
+
+    .nav-pricing-mobile-menu-btn {
+        width: 204px;
+    }
+}
+
+
+@media screen and (min-width: 1336px) {
+    .mobile-menu {
+        display: none;
+    }
+}
