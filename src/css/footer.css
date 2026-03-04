@@ -4,8 +4,6 @@
   margin: 0;
 }
 
-
-
 .footer-container {
   background-color: #f8fbfe;
   padding: 32px;
@@ -31,7 +29,6 @@
   position: absolute;
   top: 0;
   left: 0;
-
 }
 
 .footer-input-text {
@@ -67,7 +64,6 @@ input:focus:invalid {
   border-color: #ff0303;
 }
 
-
 .footer-input-line::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -97,7 +93,6 @@ input:focus:invalid {
   opacity: 0.3;
 }
 
-
 .footer-privacy {
   font-weight: 400;
   font-size: 12px;
@@ -113,7 +108,6 @@ input:focus:invalid {
   flex-direction: column;
   row-gap: 40px;
 }
-
 
 .footer-link-title {
   font-weight: 600;
@@ -141,7 +135,6 @@ input:focus:invalid {
   opacity: 0.3;
 }
 
-
 .footer-social-title {
   font-weight: 600;
   font-size: 16px;
@@ -149,8 +142,6 @@ input:focus:invalid {
   color: #0d0b0a;
   margin-bottom: 12px;
 }
-
-
 
 .footer-social-link {
   display: flex;
@@ -180,15 +171,13 @@ input:focus:invalid {
 }
 
 .footer-social-item:hover,
-.footer-social-item:focus>svg {
+.footer-social-item:focus > svg {
   opacity: 0.5;
 }
 
-.footer-social-item:active>svg {
+.footer-social-item:active > svg {
   opacity: 0.3;
 }
-
-
 
 .yoga-studio {
   font-weight: 400;
@@ -197,15 +186,10 @@ input:focus:invalid {
   color: #0d0b0a;
 }
 
-
 /* END FOOTER LINK  */
-
-
-
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-
   .footer {
     padding: 40px 0;
   }
@@ -267,7 +251,6 @@ input:focus:invalid {
     margin-bottom: 16px;
   }
 
-
   .footer-social {
     width: 300px;
   }
@@ -275,15 +258,10 @@ input:focus:invalid {
   .footer-social-title {
     margin-bottom: 16px;
   }
-
-
 }
-
-
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1336px) {
-
   .footer {
     padding: 64px;
   }
@@ -299,15 +277,11 @@ input:focus:invalid {
     margin: 0;
   }
 
-
   .footer-subscribe {
     width: 100%;
   }
 
-
   .footer-link {
     max-width: 371px;
   }
-
-
 }
