@@ -152,6 +152,11 @@
         padding-top: 12px;
         padding-bottom: 12px;
     }
+    
+    .testimonials-img-desc {
+        font-family: 'Sarabun', sans-serif;
+        line-height: 1.6;
+    }
 
     .test-gap-cont,
     .test-gap-cont2 {
