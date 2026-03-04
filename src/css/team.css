@@ -1,4 +1,21 @@
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Sarabun', sans-serif;
+    color: #0d0b0a;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f2fafa;
+}
+
+main {
+    flex-grow: 1;
+}
+
 .team .team-members {
     display: flex;
     flex-direction: column;
@@ -14,9 +31,7 @@
     padding-bottom: 64px;
 }
 
-.team .member-card {
-    max-width: 100%;
-}
+
 
 .team .team-members li picture {
     border-radius: 16px;
@@ -34,6 +49,10 @@
     text-align: center;
 }
 
+.team .team-content {
+    margin-top: 20px;
+}
+
 .team .member-name {
     font-weight: 600;
     font-size: 18px;
@@ -46,9 +65,7 @@
     margin-bottom: 20px;
 }
 
-.team .team-content {
-    margin-top: 20px;
-}
+
 
 .socials {
     display: flex;
@@ -64,6 +81,7 @@
     letter-spacing: 0.01em;
     font-weight: 400;
     align-self: center;
+    letter-spacing: 0.01em;
     margin-top: 12px;
     margin-bottom: 20px;
     color: rgba(13, 11, 10, 1);
@@ -83,6 +101,105 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
+    text-align: center;
+    color: #0d0b0a;
 }
 
+.team-sub-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: #0d0b0a;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    opacity: 0.5;
+}
+
+.socials-link:active {
+    opacity: 0.3;
+}
+
+
+
+
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+
+
+    .section-name {
+        margin-bottom: 40px;
+    }
+
+    .team .team-members {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        align-items: flex-start;
+    }
+
+    .team .member-card {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+
+    .team .container {
+        font-family: inherit;
+        padding-top: 40px;
+    }
+
+    .team-meet {
+        font-size: 16px;
+    }
+
+
+    .team h2 {
+        font-size: 52px;
+        align-self: center;
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+    .team-sub-text {
+        font-size: 18px;
+    }
+
+
+
+    .team .member-name {
+        font-size: 22px;
+    }
+
+    .member-position {
+        font-size: 18px;
+    }
+
+
+
+
+}
+
+
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1336px) {
+
+    .container {
+        padding: 112px 64px;
+    }
+
+    .team .team-members {
+        gap: 67px 24px;
+    }
+
+    .team .member-card {
+        flex-basis: calc((100% - 48px) / 3);
+    }
+
+
+
+}
 
