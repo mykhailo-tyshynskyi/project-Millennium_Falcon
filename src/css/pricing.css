@@ -1,18 +1,18 @@
-.pricing-container{
+.pricing-container {
     text-align: center;
     padding-top: 64px;
     padding-bottom: 64px;
     width: 100%;
 }
 
-.upper-text{
+.upper-text {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 12px;
 }
 
-.pricing-section-header{
+.pricing-section-header {
     font-family: 'Cabin';
     font-weight: 400;
     font-size: 40px;
@@ -21,24 +21,24 @@
     margin-bottom: 20px;
 }
 
-.after-text{
+.after-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 48px;
 }
 
-.plans-list{
+.plans-list {
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
 
-.plans-list-item{
+.plans-list-item {
     width: 100%;
 }
 
-.plan-box{
+.plan-box {
     border: 0px solid rgba(13, 11, 10, 0.15);
     border-radius: 16px;
     padding: 32px 24px;
@@ -50,13 +50,13 @@
     flex-direction: column;
 }
 
-.price-box{
+.price-box {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.plan-name{
+.plan-name {
     font-family: 'Cabin';
     font-weight: 400;
     font-size: 18px;
@@ -65,7 +65,7 @@
     text-align: center;
 }
 
-.plan-price{
+.plan-price {
     font-family: 'Cabin';
     font-weight: 400;
     font-size: 44px;
@@ -73,21 +73,32 @@
     letter-spacing: 0.01em;
 }
 
-.plan-features{
+.plan-features {
     display: flex;
     flex-direction: column;
     padding: 8px 0px;
     gap: 16px;
 }
 
-.plan-features-text{
+.plan-features-item{
+    position: relative;
+}
+
+.plan-features-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.plan-features-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
     text-align: left;
+    margin-left: 40px;
 }
 
-.plan-button{
+.plan-button {
     border: 1px solid #C2D9FC;
     border-radius: 100px;
     padding: 10px 24px;
@@ -105,39 +116,39 @@
 }
 
 .plan-button:hover,
-.plan-button:focus{
+.plan-button:focus {
     opacity: 0.5;
 }
 
-.plan-button:active{
+.plan-button:active {
     background: transparent;
     opacity: 1;
 }
 
-.plan-button:disabled{
+.plan-button:disabled {
     opacity: 0.2;
 }
 
 @media only screen and (min-width: 768px) {
-    .pricing-container{
+    .pricing-container {
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    
-    .upper-text{
+
+    .upper-text {
         margin-bottom: 16px;
     }
 
-    .pricing-section-header{
+    .pricing-section-header {
         margin-bottom: 24px;
     }
 
-    .after-text{
+    .after-text {
         font-size: 18px;
         margin-bottom: 24px;
     }
 
-    .plans-list{
+    .plans-list {
         flex-direction: row;
         flex-wrap: wrap;
         gap: 24px;
@@ -147,7 +158,7 @@
         width: calc((100% - 24px) / 2);
     }
 
-    .plan-box{
+    .plan-box {
         padding: 16px;
         padding-bottom: 84px;
         gap: 32px;
@@ -158,24 +169,24 @@
         font-size: 22px;
     }
 
-    .plan-price{
+    .plan-price {
         font-size: 72px;
     }
 
-    .plan-button{
+    .plan-button {
         width: 308px;
         right: 16px;
         bottom: 16px;
     }
 
-    .plans-list-item:nth-last-of-type(1) .plan-box{
+    .plans-list-item:nth-last-of-type(1) .plan-box {
         padding: 86px 16px;
         flex-direction: row;
         gap: 32px;
     }
 
     .plans-list-item:nth-last-of-type(1) .price-box,
-    .plans-list-item:nth-last-of-type(1) .plan-features{
+    .plans-list-item:nth-last-of-type(1) .plan-features {
         margin: 0;
         width: calc((100% - 32px) / 2);
     }
@@ -189,50 +200,50 @@
         bottom: 86px;
         right: auto;
         width: 320px;
-    } 
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-    .pricing-container{
+    .pricing-container {
         padding-top: 112px;
         padding-bottom: 112px;
     }
 
-    .pricing-section-header{
+    .pricing-section-header {
         font-size: 52px;
     }
 
-    .after-text{
+    .after-text {
         margin-bottom: 40px;
     }
 
-    .plans-list{
+    .plans-list {
         flex-wrap: nowrap;
     }
 
     .plans-list-item,
-    .plans-list-item:nth-last-of-type(1){
+    .plans-list-item:nth-last-of-type(1) {
         width: calc((100% - 48px) / 3);
     }
 
-    .plan-box{
+    .plan-box {
         padding: 32px;
         padding-bottom: 194px;
     }
 
-    .plans-list-item:nth-last-of-type(1) .plan-box{
+    .plans-list-item:nth-last-of-type(1) .plan-box {
         padding: 32px;
         padding-bottom: 110px;
         flex-direction: column;
     }
 
     .plans-list-item:nth-last-of-type(1) .price-box,
-    .plans-list-item:nth-last-of-type(1) .plan-features{
+    .plans-list-item:nth-last-of-type(1) .plan-features {
         width: 100%;
     }
 
     .plan-button,
-    .plans-list-item:nth-last-of-type(1) .plan-button{
+    .plans-list-item:nth-last-of-type(1) .plan-button {
         bottom: 32px;
         right: 32px;
         width: calc(100% - 32px * 2);
