@@ -112,9 +112,9 @@
     opacity: 0.5;
 }
 
-.button-link:active{
+.button-link:active {
     opacity: 0.3;
-  {
+  }
   
 @media screen and (min-width: 768px) {
     .discover {
