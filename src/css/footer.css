@@ -6,7 +6,7 @@
 
 .footer-container {
   background-color: #f8fbfe;
-  padding: 32px 0;
+  padding: 32px;
   border: 0px solid rgba(13, 11, 10, 0.15);
   border-radius: 16px;
 }
@@ -264,6 +264,10 @@ input:focus:invalid {
 @media only screen and (min-width: 1336px) {
   .footer {
     padding: 64px 0;
+  }
+
+  .footer-container {
+    padding: 48px;
   }
 
   .footer-main {
