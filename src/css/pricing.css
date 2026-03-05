@@ -1,0 +1,245 @@
+.pricing-container {
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    width: 100%;
+}
+
+.upper-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.pricing-section-header {
+    font-family: 'Cabin';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+}
+
+.after-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 48px;
+}
+
+.plans-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.plans-list-item {
+    width: 100%;
+}
+
+.plan-box {
+    background: #DFEBEB;
+    position: relative;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+
+    border: 0px solid rgba(13, 11, 10, 0.15);
+    border-radius: 16px;
+    padding: 32px 24px;
+}
+
+.price-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.plan-name {
+    font-family: 'Cabin';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.plan-price {
+    font-family: 'Cabin';
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+}
+
+.plan-features {
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0px;
+    gap: 16px;
+}
+
+.plan-features-item{
+    position: relative;
+}
+
+.plan-features-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.plan-features-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.plan-button {
+    border: 1px solid #C2D9FC;
+    border-radius: 100px;
+    height: 46px;
+    width: 100%;
+    background-color: #C2D9FC;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 8px;
+    justify-self: center;
+    transition: opacity 250ms ease, background-color 250ms ease;
+}
+
+.plan-button:hover,
+.plan-button:focus {
+    opacity: 0.5;
+}
+
+.plan-button:active {
+    opacity: 1;
+    background-color: transparent;
+}
+
+.plan-button:disabled {
+    opacity: 0.2;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1335px) {
+    .pricing-container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .upper-text {
+        margin-bottom: 16px;
+    }
+
+    .pricing-section-header {
+        margin-bottom: 24px;
+    }
+
+    .after-text {
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
+    .plans-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .plans-list-item {
+        width: calc((100% - 24px) / 2);
+    }
+
+    .plan-box {
+        padding: 16px;
+        gap: 32px;
+        flex-direction: column;
+    }
+
+    .plan-name {
+        font-size: 22px;
+    }
+
+    .plan-price {
+        font-size: 72px;
+    }
+
+    .plan-button {
+        width: 308px;
+        align-self: center;
+        margin-top: 0;
+    }
+
+    .plans-list-item:nth-last-of-type(1) .plan-box > :nth-child(2) {
+        order: 3;
+    }
+
+    .plans-list-item:nth-last-of-type(1) .plan-box > :nth-child(3) {
+        order: 2;
+    }
+
+    .plans-list-item:nth-last-of-type(1) .plan-box {
+        padding: 86px 16px;
+        gap: 0 32px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+        height: 383px;
+    }
+
+    .plans-list-item:nth-last-of-type(1) .price-box,
+    .plans-list-item:nth-last-of-type(1) .plan-features {
+        margin: 0;
+        width: calc((100% - 32px) / 2);
+    }
+
+    .plans-list-item:nth-last-of-type(1) {
+        width: 100%;
+    }
+
+    .plans-list-item:nth-last-of-type(1) .plan-button {
+        width: 320px;
+    }
+}
+
+@media only screen and (min-width: 1336px) {
+    .pricing-container {
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+
+    .pricing-section-header {
+        font-size: 52px;
+    }
+
+    .after-text {
+        margin-bottom: 40px;
+    }
+
+    .plans-list {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .plans-list-item {
+        width: calc((100% - 48px) / 3);
+    }
+
+    .plan-box {
+        padding: 32px;
+        height: 509px;
+    }
+
+    .plan-button {
+        position: absolute;
+        bottom: 32px;
+        left: 32px;
+        width: calc(100% - 32px * 2);
+    }
+}

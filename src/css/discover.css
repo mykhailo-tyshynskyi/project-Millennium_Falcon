@@ -1,0 +1,202 @@
+.discover{
+    padding: 64px 0;
+    max-width: 100%;
+}
+
+
+.explore-title{
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 1.5;
+    text-align: center;
+    color: #0d0b0a;
+}
+
+.discover-title{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 1;
+    line-height: 1.2;
+    text-align: center;
+    color: rgba(13, 11, 10, 1);
+    margin-top: 12px;
+}
+
+.discover-description{
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 1.6;
+    text-align: center;
+    color: rgba(13, 11, 10, 1);
+    margin-top: 20px;
+}
+
+.yoga-programs{
+     padding: 48px 0;
+}
+
+.yoga-programs-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+
+}
+
+
+
+.yoga-photo{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.yoga-programs-description{
+    margin-top: 24px;
+}
+
+.yoga-programs-title{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 1%;
+    text-align: center;
+}
+
+.title-extra {
+  display: inline;
+}
+
+.yoga-description {
+    margin-top: 20px;
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.button-link{
+    display: flex;            
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Sarabun', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0;
+    text-align: center;
+    color: rgba(13, 11, 10, 1);
+    box-sizing: border-box;
+    
+    width: 100%;         
+          
+    height: 46px;
+    padding: 0 16px;
+        
+    text-decoration: none;
+    border-radius: 100px;
+    background-color: rgba(194, 217, 252, 1);
+    border: 1px solid rgba(194, 217, 252, 1);
+}
+
+@media screen and (min-width: 768px) {
+    .discover {
+    padding: 40px 0;
+    }
+    .discover-title {
+    margin-top: 16px;
+    }
+    .text-t {
+    display: inline;
+    }
+    .text-md {
+    display: none;
+    }
+
+    .yoga-programs {
+    padding: 40px 0 61px;
+    }
+    .discover-description {
+    font-size: 16px;
+    margin-top: 24px;
+}
+    
+    .yoga-programs-list {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 27px;
+  }
+
+  .yoga-programs-description{
+    margin-top: 16px;
+  }
+
+  .title-extra {
+    display: none;
+  }
+
+  .yoga-description{
+    margin: 0;
+  }
+
+  .yoga-item:nth-child(3) {
+    grid-column: 1 / 3;
+  }
+
+   .button-link {
+        width: 100%; 
+        max-width: 110px;         
+        margin-left: auto;
+        margin-right: auto;    
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    .text-t {
+    display: none;
+    }
+    .text-md {
+    display: inline;
+    }
+    
+    .yoga-programs-list {
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+    .discover {
+        padding: 112px 0;
+    }
+
+    .discover-title {
+        font-size: 52px;
+        max-width: 768px;
+        margin: 0;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .discover-description {
+        font-size: 18px;
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .yoga-item:nth-child(3) {
+        grid-column: auto ;
+    }
+
+    .yoga-programs-title {
+        font-size: 36px;
+    }
+    }
