@@ -73,7 +73,10 @@
     transition:
         background-color 250ms ease,
         color 250ms ease,
-        border-color 250ms ease;
+        border-color 250ms ease,
+        opacity 250ms ease;
+        
+  
 }
 
 .about-btn:hover,
@@ -83,6 +86,7 @@
 
 .about-btn:active {
     background-color: transparent;
+  opacity: 0.3;
 }
 
 
