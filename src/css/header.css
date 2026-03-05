@@ -1,6 +1,6 @@
 :root {
-  --color-hawkes-blue: #C2D9FC;
-  --color-hawkes-blue-focus: #D1E2F3;
+  --color-hawkes-blue: #c2d9fc;
+  --color-hawkes-blue-focus: #d1e2f3;
 }
 
 * {
@@ -13,18 +13,10 @@ a {
 }
 
 /* ======================= CONTAINERS (Mobile First) ======================= */
-.container {
-  min-width: 320px;
-  max-width: 375px;
-  margin: 0 auto;
-  padding: 0 16px;
-}
 
 /* ==================== HEADER BASE ====================== */
 .header {
-  font-family: "Sarabun", sans-serif;
-  padding: 10px 0;
-
+  font-family: 'Sarabun', sans-serif;
 }
 
 .nav {
@@ -38,7 +30,7 @@ a {
 }
 
 .burger {
-  width: 113.5px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -71,7 +63,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 113.5px;
+  width: 100%;
 }
 
 /* ==================== 3 JOIN NOW ====================== */
@@ -86,7 +78,6 @@ a {
   color: #111111;
   border: 1px solid var(--color-hawkes-blue);
   border-radius: 100px;
-  padding-inline: 16px;
   width: 102px;
   height: 34px;
   font-weight: 500;
@@ -104,7 +95,6 @@ a {
   color: rgba(17, 17, 17, 0.5);
 
   border: 1px solid var(--color-hawkes-blue-focus);
-
 }
 
 /* 3. (Active) Hover/Focus */
@@ -125,13 +115,10 @@ a {
   .container {
     max-width: 768px;
     padding: 0 32px;
-
   }
 
   .header {
     height: 72px;
-    padding: 15px 0;
-
   }
 
   .nav {
@@ -190,7 +177,6 @@ a {
 
   .header {
     height: auto;
-    padding: 15px 0;
   }
 
   .nav-list {
@@ -216,7 +202,6 @@ a {
     font-size: 16px;
   }
 
-
   .nav-link-current,
   .nav-link {
     position: relative;
@@ -236,7 +221,7 @@ a {
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color: #7F8282;
+    background-color: #7f8282;
     border-radius: 4px;
     transform: scaleX(0);
     transform-origin: center;
