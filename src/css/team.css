@@ -1,0 +1,228 @@
+
+
+.team .team-members {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.team .container {
+    font-family: inherit;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+
+
+.team .team-members li picture {
+    border-radius: 16px;
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.team .about-member,
+.team .member-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.team .team-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.team .member-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.team .member-name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.team .about-member {
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .socials {
+    margin-top: auto;
+}
+
+.team h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    font-weight: 400;
+    align-self: center;
+    letter-spacing: 0.01em;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    color: rgba(13, 11, 10, 1);
+    font-family: 'Cabin', sans-serif;
+}
+
+.section-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.team-meet {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: #0d0b0a;
+}
+
+.team-sub-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: #0d0b0a;
+}
+
+.socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+    opacity: 0.5;
+}
+
+.socials-link:active {
+    opacity: 0.3;
+}
+
+
+
+
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+
+
+    .section-name {
+        margin-bottom: 40px;
+    }
+
+    .team .team-members {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        align-items: flex-start;
+    }
+
+    .team .member-card {
+        flex-basis: calc((100% - 24px) / 2);
+        height: 630px;
+    }
+
+    .team .container {
+        font-family: inherit;
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+
+    .team-meet {
+        font-size: 16px;
+    }
+
+
+    .team h2 {
+        font-size: 52px;
+        align-self: center;
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+    .team-sub-text {
+        font-size: 18px;
+    }
+
+    .team .member-name {
+        font-size: 22px;
+    }
+
+    .member-position {
+        font-size: 18px;
+    }
+
+    .team .socials {
+        margin-top: 0;
+    }
+
+    .team .about-member {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    }
+
+}
+
+
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1336px) {
+
+    .team .container {
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+
+    .team .team-members {
+        gap: 67px 24px;
+        align-items: flex-start;
+    }
+
+    .team .member-card {
+        flex-basis: calc((100% - 48px) / 3);
+        height: auto;
+    }
+
+    .team .about-member {
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+
+    .team .team-content {
+        margin-top: 24px;
+        flex-grow: 0;
+    }
+
+
+
+}
+
