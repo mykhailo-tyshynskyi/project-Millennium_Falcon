@@ -115,6 +115,7 @@
     align-items: center;
     width: 24px;
     height: 24px;
+    transition: opacity 250ms ease;
 }
 
 .socials-link:hover,
