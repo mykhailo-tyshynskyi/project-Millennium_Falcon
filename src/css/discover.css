@@ -104,8 +104,18 @@
     border-radius: 100px;
     background-color: rgba(194, 217, 252, 1);
     border: 1px solid rgba(194, 217, 252, 1);
+    transition: opacity 250ms ease;
 }
 
+.button-link:hover,
+.button-link:focus{
+    opacity: 0.5;
+}
+
+.button-link:active{
+    opacity: 0.3;
+  {
+  
 @media screen and (min-width: 768px) {
     .discover {
     padding: 40px 0;
