@@ -1,10 +1,17 @@
-<section class="discover">
+
+<section class="discover" id="discover-section">
     <div class="container">
         
         <p class="explore-title">Explore</p>
     
-        <h2 class="discover-title">Discover Our Most Popular Yoga Programs</h2>
-
+        <h2 class="discover-title">
+            <span class="text-md">
+                Discover Our Most Popular Yoga Programs
+            </span>
+            <span class="text-t">
+                Transform Your Life with Our Yoga Clases
+            </span>
+        </h2>
         <p class="discover-description">
             Join our community and elevate your practice with our expertly designed yoga programs. 
             Each course is tailored to meet various skill levels and personal goals.
@@ -14,37 +21,96 @@
 
             <ul class="yoga-programs-list">
                 <li class="yoga-item">
-                    <img src="../img/discover/beginner-yoga-m@2x.webp" alt="beginner-yoga" class="yoga-photo">
+                    <picture>
+                    <source
+                    srcset="/img/discover/beginner-yoga-m.webp 1x,
+                            /img/discover/beginner-yoga-m@2x.webp 2x"
+                    media="(max-width: 767px)"
+                    />
+                    <source
+                    srcset="/img/discover/beginner-yoga-t.webp 1x,
+                            /img/discover/beginner-yoga-t@2x.webp 2x"
+                    media="(max-width: 1335px)"
+                    />
+                    <img
+                    class="yoga-photo"
+                    src="/img/discover/beginner-yoga.webp"
+                    srcset="/img/discover/beginner-yoga.webp 1x,
+                            /img/discover/beginner-yoga@2x.webp 2x"
+                    alt="Beginner yoga"
+                    />
+                </picture>
                     
 
                     <div class="yoga-programs-description">
-                        <h4 class="yoga-programs-title">Beginner Yoga: Foundations</h3>
+                        <h4 class="yoga-programs-title">Beginner Yoga: Foundations 
+                            <span class="title-extra">for New Practitioners</span>
+                        </h4>
                             <p class="yoga-description">Learn the basics of yoga in a supportive environment.</p>
                     </div>
                 </li>
                 
                 <li class="yoga-item">
-                    <img src="../img/discover/vinyasa-flow-m@2x.webp" alt="vinyasa-flow" class="yoga-photo">
+                    <picture>
+                        <source
+                        srcset="/img/discover/vinyasa-flow-m.webp 1x,
+                                /img/discover/vinyasa-flow-m@2x.webp 2x"
+                        media="(max-width: 767px)"
+                        />
 
+                        <source
+                        srcset="/img/discover/vinyasa-flow-t.webp 1x,
+                                /img/discover/vinyasa-flow-t@2x.webp 2x"
+                        media="(max-width: 1335px)"
+                        />
+
+                        <img
+                        class="yoga-photo"
+                        src="/img/discover/vinyasa-flow.webp"
+                        srcset="/img/discover/vinyasa-flow.webp 1x,
+                                /img/discover/vinyasa-flow@2x.webp 2x"
+                        alt="Vinyasa flow yoga class in motion"
+                        />
+                    </picture>
                     <div class="yoga-programs-description">
-                        <h4 class="yoga-programs-title">Vinyasa Flow: Energize Your Body and Mind</h3>
+                        <h4 class="yoga-programs-title">Vinyasa Flow: Energize Your Body and Mind</h4>
                             <p class="yoga-description">Experience a dynamic sequence that connects breath and movement.</p>
                     </div>
                 </li>
 
                 
                 <li class="yoga-item">
-                    <img src="../img/discover/restorative-yoga-m@2x.webp" alt="restorative-yoga" class="yoga-photo">
+                    <picture>
+                        <source
+                        srcset="/img/discover/restorative-yoga-m.webp 1x,
+                                /img/discover/restorative-yoga-m@2x.webp 2x"
+                        media="(max-width: 767px)"
+                        />
 
+                        <source
+                        srcset="/img/discover/restorative-yoga-t.webp 1x,
+                                /img/discover/restorative-yoga-t@2x.webp 2x"
+                        media="(max-width: 1335px)"
+                        />
+
+                        <img
+                        class="yoga-photo"
+                        src="/img/discover/restorative-yoga.webp"
+                        srcset="/img/discover/restorative-yoga.webp 1x,
+                                /img/discover/restorative-yoga@2x.webp 2x"
+                        alt="Restorative yoga with relaxing poses"
+                        />
+                    </picture>
                     <div class="yoga-programs-description">
-                        <h4 class="yoga-programs-title">Restorative Yoga: Deep Relaxation and Healing</h3>
+                        <h4 class="yoga-programs-title">Restorative Yoga: Deep Relaxation and Healing</h4>
                         <p class="yoga-description">Unwind and rejuvenate with gentle poses and mindfulness.</p>
                     </div>
+                    </picture>
+                    
                 </li>
             </ul>
         </div>
-
-        <button type="button" class="button-join">Join now</button>
-
+        
+        <a href="#pricing" class="button-link">Join now</a>
     </div>
 </section>
